@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake Shop</title>
+  <style>
+    body {
+      background-color: #fff7e6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+
+    header {
+      background-color: #f8d9d6;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #5c2a2a;
+      font-size: 48px;
+    }
+
+    nav {
+      background-color: #ffe0b2;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 15px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #a0522d;
+      font-weight: bold;
+    }
+
+    .section-box {
+      margin: 30px auto;
+      width: 80%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 500px;
+      text-align: left;
+    }
+
+    ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #5c2a2a;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    ul li img {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+      margin-left: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      text-align: left;
+      display: inline-block;
+      padding: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 300px;
+      padding: 8px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #ff9999;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      width: 80%;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #a56b4f;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      background-color: #fff4e6;
+    }
+
+    footer {
+      background-color: #f8d9d6;
+      padding: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    iframe {
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome to our Cake Shop 🎂</h1>
+    <p>Your sweet destination for all types of cakes!</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HTXB6flODww?autoplay=1&mute=1" allowfullscreen></iframe>
+
+  </header>
+
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#order">Order</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <div class="section-box" id="products">
+    <h2>🍰 Our Products</h2>
+    <ul>
+      <li>Chocolate Cake <img src="image/Chocolate.jpg" alt="Chocolate Cake"></li>
+      <li>Vanilla Cake <img src="image/Vanilla.jpg" alt="Vanilla Cake"></li>
+      <li>Red Velvet Cake <img src="image/red.jpg" alt="Red Velvet Cake"></li>
+      <li>Fruit Cake <img src="image/fruit.jpg" alt="Fruit Cake"></li>
+    </ul>
+  </div>
+
+  <div class="section-box" id="order">
+    <h2>📝 Order Now</h2>
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" required /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" required /><br />
+
+      <label for="cake">Choose Cake:</label><br />
+      <select id="cake">
+        <option>Chocolate</option>
+        <option>Vanilla</option>
+        <option>Red Velvet</option>
+        <option>Fruit</option>
+      </select><br />
+
+      <label for="qty">Quantity:</label><br />
+      <input type="number" id="qty" min="1" required /><br />
+
+      <input type="submit" value="Order Now" />
+    </form>
+  </div>
+
+  <div class="section-box" id="schedule">
+    <h2>🗓️ Weekly Schedule</h2>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Opening Hours</th>
+        <th>Special Cake</th>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td>10 AM - 8 PM</td>
+        <td>Chocolate</td>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>10 AM - 8 PM</td>
+        <td>Vanilla</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>10 AM - 8 PM</td>
+        <td>Red Velvet</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section-box" id="contact">
+    <h2>📞 Contact Us</h2>
+    <form>
+      <label for="email2">Email:</label><br />
+      <input type="email" id="email2" required /><br />
+
+      <label for="phone">Phone:</label><br />
+      <input type="tel" id="phone" required /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" rows="4" required></textarea><br />
+
+      <input type="submit" value="Send Message" />
+    </form>
+  </div>
+
+  <div class="section-box" id="about">
+    <h2>👩‍🍳 About Us</h2>
+    <p>We are a passionate team of bakers dedicated to bringing you joy in every bite. Fresh, handcrafted cakes every day!</p>
+    <p>Follow us:</p>
+    <a href="#"><img src="image/facebook.png" alt="Facebook" /></a>
+    <a href="#"><img src="image/instagram.jpg" alt="Instagram" /></a>
+    <a href="#"><img src="image/twitter.png" alt="Twitter" /></a>
+    <a href="#"><img src="image/youtube.png" alt="YouTube" /></a>
+  </div>
+
+  
+
+  <footer>
+    <p>&copy; 2025 Cake Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

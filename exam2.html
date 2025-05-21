@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cake Shop </title>
+
+    </head>
+       <style>
+        body {
+            background-image: url(image/cake2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+           background-position-x: left;
+            background-color:wheat;
+            font-family: Arial, sans-serif;
+            text-align: center;
+           
+        }
+        h1 {
+            color: #000000;
+            font-size: 50px;
+        }
+        a {
+            margin: 10px;
+            text-decoration:underline;
+            color: #000;
+            font-size: 30px;
+        }
+         .container {
+            height: 610px;
+            width: 1200px;
+            margin-left: 80px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: rgba(196, 168, 168, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .maindiv {
+            width: 1200px;
+            height: 500px;
+            margin-left: 80px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: rgba(196, 168, 168, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        </style>
+    <body>
+        <div class="container">
+        <header>
+
+ <h1> Welcom to our Cake Shop 🎂 </h1></header>
+       <iframe width="800" height="400"
+  src="https://www.youtube.com/embed/HTXB6flODww?autoplay=1&mute=1"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
+        <br>
+        <nav>
+        <a href ="#prodect">  our prodect </a>
+         <a href="#order"> Order now </a>
+         <a href="#contact"> Contact us </a>
+         <a href="#about"> About us </a>
+         <br>
+</nav>
+       </div>      
+       <div class="maindiv">
+            <section id="prodect">
+                <h2>Our Products</h2>
+                <ul>
+                    <li>Chocolate Cake  <img src="image/Chocolate.jpg"> <li>Vanilla Cake  <img src="image/Vanilla.jpg"> </li></li>
+                    
+                    <li>Red Velvet Cake <img src="image/red.jpg"></li>
+                    <li>Fruit Cake <img src="image/fruit.jpg"></li>
+                </ul></section>
+                </div>
+
+           <section id="order">
+                <h2>Order Now</h2>
+                <form >
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="cake">Select Cake:</label>
+                    <select id="cake" name="cake">
+                        <option value="chocolate">Chocolate Cake</option>
+                        <option value="vanilla">Vanilla Cake</option>
+                        <option value="redvelvet">Red Velvet Cake</option>
+                        <option value="fruit">Fruit Cake</option>
+                    </select><br><br>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+                    <input type="submit" value="Order Now">
+                </form></section>
+                <section id="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+                <p>Email:<label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    <input type="submit" value="Send Message">
+                </form>
+        
+
+                </section>
+                <section id="about">
+                <h2>About Us</h2>
+                <p>We are a passionate team of bakers dedicated to creating delicious and beautiful cakes for all occasions. Our cakes are made with the finest ingredients and crafted with love.</p>
+                <p>Follow us on social media for the latest updates and promotions!</p>
+                <a href="https://www.facebook.com" target="_blank"><img src="image/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="image/twitter.png" alt="Twitter"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="image/youtube.png" alt="YouTube"></a>
+                <br><br>
+                </section>
+            
+            </body>
+            </html>
